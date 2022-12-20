@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Press+Start+2P&family=Rubik+Glitch&display=swap');
+
+:root {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.1fr;
+  grid-template-areas: 
+    "topnav topnav topnav topnav topnav topnav"
+    "sidenav main main main main main"
+    "sidenav main main main main main"
+    "footer footer footer footer footer footer";
+}
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  grid-area: topnav;
+  background-color: rgb(254, 132, 56);
+  justify-content: center;
+}
+
+.sidenav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-area: sidenav;
+  background-color: rgb(245, 245, 245);
+}
+
+.sidenav > p {
+  margin: 0px;
+}
+
+.bottomFooter {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+}
+
+.main {
+  grid-area: main;
+  background-color: rgb(255, 255, 255);
+}
+
+button {
+  border: 0;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(186, 186, 186);
+}
+
+button:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.new-project-form {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+input{
+  padding: 5px;
+  margin: 10px;;
+}

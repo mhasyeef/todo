@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+
+    <div class="topnav">
+      <span>
+      <h1>TODO</h1>
+      </span>
+    </div>
+
+    <div class="main">
+      <div class="new-project-form">
+        <div class="new-form-header">
+          <h3>New Project</h3>
+        </div>
+        
+        <div class="new-form-body" id="new-project-form">
+          <form>
+            <input type="text" id="title" name="title" placeholder="Enter Project Name"><br>
+            <input type="submit" id="submit" value="Submit">
+            <input type="button" id="close" value="Close">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="sidenav">
+      <h2>Home</h2>
+      <p>All Tasks</p>
+      <p>Today</p>
+      <p>Upcoming</p>
+      <div class="projects">
+        <h2>Projects</h2>
+        <ul class="project-list">
+        </ul>
+      </div>
+      
+      <button class="add-project">Add Project</button>
+    </div>
+
+    <div class="bottomFooter">
+      <p>Copyright</p>
+    </div>
+
+  </div>
+  
+
+</body>
+</html>
